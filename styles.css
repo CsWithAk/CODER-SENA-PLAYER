@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #030303;
+}
+
+.music-player {
+    background-color: #48c9fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 10;
+    text-align: center;
+}
+.music-player.dark-mode{
+    background-color: #121212;
+    color: #fff;
+}
+
+header{
+    width: 350px;
+    height: 40px;
+    max-width: 1200px;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 72, 0),  rgb(255, 145, 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.back{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.back:hover{
+    color: #000;
+}
+.text{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+#theme{
+    color:#FFF; 
+    cursor:pointer;
+    margin: 5px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#theme:hover{
+    color: #000;
+}
+
+#search {
+    margin-top: 10px;
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #e20d0d;
+    border-radius: 5px;
+}
+
+.playlist {
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid #e20d0d;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.playlist .track {
+    padding: 10px;
+    border: 1px solid #e20d0d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.playlist .track:hover {
+    background-color: #f0f0f0;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    display: absolute;
+    justify-content: space-evenly;
+    align-items: left;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border: none;
+    background-color: #e20d0d;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.controls button:hover {
+    color: #f8e800;
+    background-color: rgb(255, 72, 0);
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+.progress input {
+    width: 75%;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    max-width: 1200px;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 72, 0),  rgb(255, 145, 2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bolder;
+}

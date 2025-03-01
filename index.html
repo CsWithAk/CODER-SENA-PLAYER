@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="src\music logo.jpg">
+    <title>Amit Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="music-player">
+      <header>
+        <span class="back"><i class="fa-solid fa-angle-left"></i> </span>
+        <span class="text">Amit _ Music</span>
+        <a id="theme"><i class="fa-solid fa-moon"></i></a>
+      </header>
+      <input type="text" id="search" placeholder="Search music...">
+      <div class="playlist" id="playlist">
+        <div id="p" class="track" data-src="src\Abhimanyu.mp3">1. - Abhimanyu.mp3</div>
+        <div id="p" class="track" data-src="src\Chunar.mp3">2. - Chunar.mp3</div>
+        <div id="p" class="track" data-src="src\Daur_haryanvi song.mp3">3. - Daur_haryanvi song.mp3</div>
+        <div id="p" class="track" data-src="src\Duvidha-rap.mp3">4. - Duvidha-rap.mp3</div>
+        <div id="p" class="track" data-src="src\Haldighati.mp3">5. - Haldighati.mp3</div>
+        <div id="p" class="track" data-src="src\kaise ho sad.mp3">6. - kaise ho sad.mp3</div>
+        <div id="p" class="track" data-src="src\Varsho pahale.mp3">7. - Varsho pahale.mp3</div>
+        <div id="p" class="track" data-src="src\Ashiqui_2.mp3">8. - Ashiqui_2</div>
+        <div id="p" class="track" data-src="src\Radha_Krishna.mp3">9. - Radha_Krishna.mp3</div>
+        <div id="p" class="track" data-src="/src/aarambh_hai_prachand.mp3">10. - Aarambh Hai Prachand</div>
+        <div id="p" class="track" data-src="/src/Aaye_Ho_Meri_Zindagi_Mein.mp3">11. - Aaye ho meri jindagi me</div>
+        <div id="p" class="track" data-src="/src/Jogi_Bangya_Re.mp3">12. - Jogi Ban gya re</div>
+        <div id="p" class="track" data-src="/src/Yeh_Raaten_Yeh_Mausam.mp3">13. - Ye raaten ye mausham</div>
+        <div id="p" class="track" data-src="/src/Khatu_Shyam(0).mp3">14. - Khatu Shyam</div>
+        <div id="p" class="track" data-src="/src/Tera_Fitoor.mp3">15. - Tera Fitoor</div>
+        <div id="p" class="track" data-src="/src/Mein_Tera_Shukar_Kara.mp3">16. - Mai tera sukar kara</div>
+      </div>
+        
+      <div class="progress">
+        <span id="current-time">00:00</span>
+        <input type="range" id="progress-bar" value="0">
+        <span id="duration">00:00</span>
+      </div>
+      <div class="controls">
+        <button id="prev"><i class="fa-solid fa-backward-fast"></i></button>
+        <button id="play">Play</button>
+        <button id="next"><i class="fa-solid fa-forward-fast"></i></button>
+      </div>
+      <div class="copyright">
+        <p id="p">&copy; 2025 Amit Kumar || All Rights Reserved.</p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
