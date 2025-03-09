@@ -82,6 +82,8 @@ header{
 }
 
 .playlist .track {
+    display: flex;
+    position: left;
     padding: 10px;
     border: 1px solid #e20d0d;
     cursor: pointer;
